@@ -3,9 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35327.3
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WAT", "WAT.csproj", "{4659F7E7-09E1-4116-AAB3-CE76DBD365F9}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WAT.Tests", "..\WAT.Tests\WAT.Tests.csproj", "{EA01CD48-3726-448E-8822-43FCB0D40E67}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WAT", "WAT.csproj", "{4C0867B1-2E79-4DBD-8A5F-FA0BB66A3957}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,19 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{4659F7E7-09E1-4116-AAB3-CE76DBD365F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4659F7E7-09E1-4116-AAB3-CE76DBD365F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4659F7E7-09E1-4116-AAB3-CE76DBD365F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4659F7E7-09E1-4116-AAB3-CE76DBD365F9}.Release|Any CPU.Build.0 = Release|Any CPU
-		{EA01CD48-3726-448E-8822-43FCB0D40E67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EA01CD48-3726-448E-8822-43FCB0D40E67}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EA01CD48-3726-448E-8822-43FCB0D40E67}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EA01CD48-3726-448E-8822-43FCB0D40E67}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C0867B1-2E79-4DBD-8A5F-FA0BB66A3957}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C0867B1-2E79-4DBD-8A5F-FA0BB66A3957}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C0867B1-2E79-4DBD-8A5F-FA0BB66A3957}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C0867B1-2E79-4DBD-8A5F-FA0BB66A3957}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {9A8CB193-35D9-48F2-B6B6-73576D1B8F27}
+		SolutionGuid = {078CEC45-CA3F-4718-B065-EA57CC0D10B2}
 	EndGlobalSection
 EndGlobal

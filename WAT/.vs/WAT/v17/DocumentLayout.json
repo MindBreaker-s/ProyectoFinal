@@ -1,12 +1,89 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Mateo\\Desktop\\Mateo\\ProyectoFinal\\WAT\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4C0867B1-2E79-4DBD-8A5F-FA0BB66A3957}|WAT.csproj|c:\\users\\mateo\\desktop\\mateo\\proyectofinal\\wat\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4C0867B1-2E79-4DBD-8A5F-FA0BB66A3957}|WAT.csproj|solutionrelative:index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|WAT||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C0867B1-2E79-4DBD-8A5F-FA0BB66A3957}|WAT.csproj|c:\\users\\mateo\\desktop\\mateo\\proyectofinal\\wat\\login.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{4C0867B1-2E79-4DBD-8A5F-FA0BB66A3957}|WAT.csproj|solutionrelative:login.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C0867B1-2E79-4DBD-8A5F-FA0BB66A3957}|WAT.csproj|c:\\users\\mateo\\desktop\\mateo\\proyectofinal\\wat\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{4C0867B1-2E79-4DBD-8A5F-FA0BB66A3957}|WAT.csproj|solutionrelative:web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C0867B1-2E79-4DBD-8A5F-FA0BB66A3957}|WAT.csproj|c:\\users\\mateo\\desktop\\mateo\\proyectofinal\\wat\\||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|909d16b3-c8e8-43d1-a2b8-26ea0d4b6b57"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "index.html",
+              "DocumentMoniker": "C:\\Users\\Mateo\\Desktop\\Mateo\\ProyectoFinal\\WAT\\index.html",
+              "RelativeDocumentMoniker": "index.html",
+              "ToolTip": "C:\\Users\\Mateo\\Desktop\\Mateo\\ProyectoFinal\\WAT\\index.html",
+              "RelativeToolTip": "index.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-11-26T23:06:00.597Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "WAT",
+              "DocumentMoniker": "C:\\Users\\Mateo\\Desktop\\Mateo\\ProyectoFinal\\WAT\\WAT.csproj",
+              "RelativeDocumentMoniker": "WAT.csproj",
+              "ToolTip": "C:\\Users\\Mateo\\Desktop\\Mateo\\ProyectoFinal\\WAT\\WAT.csproj*",
+              "RelativeToolTip": "WAT.csproj*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-11-26T23:03:42.917Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "login.aspx",
+              "DocumentMoniker": "C:\\Users\\Mateo\\Desktop\\Mateo\\ProyectoFinal\\WAT\\login.aspx",
+              "RelativeDocumentMoniker": "login.aspx",
+              "ToolTip": "C:\\Users\\Mateo\\Desktop\\Mateo\\ProyectoFinal\\WAT\\login.aspx",
+              "RelativeToolTip": "login.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-11-26T23:00:04.044Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Web.config",
+              "DocumentMoniker": "C:\\Users\\Mateo\\Desktop\\Mateo\\ProyectoFinal\\WAT\\Web.config",
+              "RelativeDocumentMoniker": "Web.config",
+              "ToolTip": "C:\\Users\\Mateo\\Desktop\\Mateo\\ProyectoFinal\\WAT\\Web.config",
+              "RelativeToolTip": "Web.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-11-26T22:59:59.954Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
