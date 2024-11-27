@@ -1,0 +1,58 @@
+﻿main {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #000;
+}
+
+.talento-section {
+    background-color: #049DD9;
+    width: 50%;
+    height: inherit;
+    height: inherit;
+    /* padding-top: 10%;
+    text-align: center;
+    align-items: center; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.empresa-section {
+    background-color: #F18FF2;
+    width: 50%;
+    height: inherit;
+    /* padding-top: 10%;
+    text-align: center;
+    align-items: center; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.principal-functions {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #000;
+}
+
+.talento-section-functions {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    background-color: #049DD9;
+}
+
+.empresa-section-functions {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    background-color: #F18FF2;
+}

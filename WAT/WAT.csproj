@@ -120,6 +120,7 @@
   <ItemGroup>
     <Content Include="index.html" />
     <Content Include="login.aspx" />
+    <Content Include="Recursos\css\styles.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -142,7 +143,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Recursos\css\" />
     <Folder Include="Recursos\js\" />
   </ItemGroup>
   <PropertyGroup>
