@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Linq;
@@ -10,7 +11,8 @@ namespace WAT
 {
     public partial class login : System.Web.UI.Page
     {
-        String cadenaConexion = ConfigurationManager.ConnectionStrings['conexion'].ConnectionString;
+        string cadenaConexion = ConfigurationManager.ConnectionStrings["conexion"].ConnectionString;
+
         protected void Page_Load(object sender, EventArgs e)
         {
             using (MySqlConnection conexion = new MySqlConnection(cadenaConexion)) { }

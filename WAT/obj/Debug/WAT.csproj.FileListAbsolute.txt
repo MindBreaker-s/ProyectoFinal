@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 C:\Users\Mateo\Desktop\Mateo\ProyectoFinal\WAT\bin\WAT.dll.config
 C:\Users\Mateo\Desktop\Mateo\ProyectoFinal\WAT\bin\WAT.dll
 C:\Users\Mateo\Desktop\Mateo\ProyectoFinal\WAT\bin\WAT.pdb
@@ -90,7 +89,6 @@ C:\Users\Mateo\Desktop\Mateo\ProyectoFinal\WAT\obj\Debug\WAT.csproj.CoreCompileI
 C:\Users\Mateo\Desktop\Mateo\ProyectoFinal\WAT\obj\Debug\WAT.csproj.Up2Date
 C:\Users\Mateo\Desktop\Mateo\ProyectoFinal\WAT\obj\Debug\WAT.dll
 C:\Users\Mateo\Desktop\Mateo\ProyectoFinal\WAT\obj\Debug\WAT.pdb
-=======
 C:\Users\nasae\Source\Repos\ProyectoFinal\WAT\bin\WAT.dll.config
 C:\Users\nasae\Source\Repos\ProyectoFinal\WAT\bin\WAT.dll
 C:\Users\nasae\Source\Repos\ProyectoFinal\WAT\bin\WAT.pdb
@@ -182,4 +180,3 @@ C:\Users\nasae\Source\Repos\ProyectoFinal\WAT\obj\Debug\WAT.csproj.CoreCompileIn
 C:\Users\nasae\Source\Repos\ProyectoFinal\WAT\obj\Debug\WAT.csproj.Up2Date
 C:\Users\nasae\Source\Repos\ProyectoFinal\WAT\obj\Debug\WAT.dll
 C:\Users\nasae\Source\Repos\ProyectoFinal\WAT\obj\Debug\WAT.pdb
->>>>>>> origin/NicoRama
