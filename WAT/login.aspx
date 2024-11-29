@@ -10,7 +10,7 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <h1><asp:Label ID="lblestado" runat="server" Text="Label"> </asp:Label></h1>
+            <h1><asp:Label ID="lblestado" runat="server" > </asp:Label></h1>
         </div>
     </form>
 </body>
