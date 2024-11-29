@@ -10,7 +10,12 @@
 <body>
     <form id="form1" runat="server">
         <div>
+<<<<<<< HEAD
             <h1><asp:Label ID="lblestado" runat="server" > </asp:Label></h1>
+=======
+            <h1><asp:Label ID="lblestado" runat="server" Text="Label"> </asp:Label></h1>
+            <h4>Login</h4>
+>>>>>>> origin/NicoRama
         </div>
     </form>
 </body>
