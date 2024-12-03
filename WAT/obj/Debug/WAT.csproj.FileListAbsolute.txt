@@ -89,6 +89,8 @@ C:\Users\Mateo\Desktop\Mateo\ProyectoFinal\WAT\obj\Debug\WAT.csproj.CoreCompileI
 C:\Users\Mateo\Desktop\Mateo\ProyectoFinal\WAT\obj\Debug\WAT.csproj.Up2Date
 C:\Users\Mateo\Desktop\Mateo\ProyectoFinal\WAT\obj\Debug\WAT.dll
 C:\Users\Mateo\Desktop\Mateo\ProyectoFinal\WAT\obj\Debug\WAT.pdb
+C:\Users\nasae\source\repos\ProyectoFinal\WAT\obj\Debug\WAT.csproj.AssemblyReference.cache
+C:\Users\nasae\source\repos\ProyectoFinal\WAT\obj\Debug\WAT.csproj.CoreCompileInputs.cache
 C:\Users\nasae\Source\Repos\ProyectoFinal\WAT\bin\WAT.dll.config
 C:\Users\nasae\Source\Repos\ProyectoFinal\WAT\bin\WAT.dll
 C:\Users\nasae\Source\Repos\ProyectoFinal\WAT\bin\WAT.pdb
@@ -175,8 +177,6 @@ C:\Users\nasae\Source\Repos\ProyectoFinal\WAT\bin\System.Numerics.Vectors.xml
 C:\Users\nasae\Source\Repos\ProyectoFinal\WAT\bin\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\nasae\Source\Repos\ProyectoFinal\WAT\bin\System.Threading.Tasks.Extensions.xml
 C:\Users\nasae\Source\Repos\ProyectoFinal\WAT\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\nasae\Source\Repos\ProyectoFinal\WAT\obj\Debug\WAT.csproj.AssemblyReference.cache
-C:\Users\nasae\Source\Repos\ProyectoFinal\WAT\obj\Debug\WAT.csproj.CoreCompileInputs.cache
 C:\Users\nasae\Source\Repos\ProyectoFinal\WAT\obj\Debug\WAT.csproj.Up2Date
 C:\Users\nasae\Source\Repos\ProyectoFinal\WAT\obj\Debug\WAT.dll
 C:\Users\nasae\Source\Repos\ProyectoFinal\WAT\obj\Debug\WAT.pdb
