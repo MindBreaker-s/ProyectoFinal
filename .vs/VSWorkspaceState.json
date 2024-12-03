@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\WAT"
+    "\\WAT",
+    "\\WAT\\obj",
+    "\\WAT\\Recursos"
   ],
+  "SelectedNode": "\\WAT\\Recursos\\Error500.html",
   "PreviewInSolutionExplorer": false
 }

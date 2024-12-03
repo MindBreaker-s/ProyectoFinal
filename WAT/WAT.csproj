@@ -118,6 +118,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Error400.html" />
+    <Content Include="Error500.html" />
     <Content Include="index.html" />
     <Content Include="login.aspx" />
     <Content Include="Recursos\css\styles.css" />
