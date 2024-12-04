@@ -22,8 +22,12 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 2,
@@ -46,7 +50,8 @@
               "RelativeToolTip": "login.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-11-29T05:59:47.264Z"
+              "WhenOpened": "2024-11-29T05:59:47.264Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -56,7 +61,7 @@
               "RelativeDocumentMoniker": "login.aspx.cs",
               "ToolTip": "C:\\Users\\nasae\\source\\repos\\ProyectoFinal\\WAT\\login.aspx.cs",
               "RelativeToolTip": "login.aspx.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAABwAAAAAAAAAAAAgwCsAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-29T06:00:56.384Z",
               "EditorCaption": ""

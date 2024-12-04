@@ -122,7 +122,6 @@
     <Content Include="Error500.html" />
     <Content Include="index.html" />
     <Content Include="login.aspx" />
-    <Content Include="Pages\Perfil.aspx" />
     <Content Include="Recursos\css\login.css" />
     <Content Include="Recursos\css\MessageBox.css" />
     <Content Include="Recursos\css\styles.css" />
@@ -135,13 +134,6 @@
     </Compile>
     <Compile Include="login.aspx.designer.cs">
       <DependentUpon>login.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Pages\Perfil.aspx.cs">
-      <DependentUpon>Perfil.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Pages\Perfil.aspx.designer.cs">
-      <DependentUpon>Perfil.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Recursos\utils\PasswordHasher.cs" />
@@ -164,6 +156,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Pages\" />
     <Folder Include="Recursos\js\" />
   </ItemGroup>
   <PropertyGroup>

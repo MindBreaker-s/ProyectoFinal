@@ -54,11 +54,21 @@ namespace WAT
                         {
                             if (reader.Read() && !reader.IsDBNull(0))
                             {
+                                //se asignan variables ed sesion
                                 Session["UsuarioID"] = reader["user_id"];
                                 Session["Nombre"] = reader["nombre_completo"];
                                 Session["Rol"] = reader["rol_id"];
 
-                                master.RedirectWithAlert("Pages/Perfil.aspx", "Inicio de sesión exitoso. Redirigiendo...", MessageType.success);
+                                //Asi se consulta la variable de session
+                                //string usuarioID = Session["UsuarioID"].ToString();
+
+
+                                if (Session["Rol"].ToString() == "1")
+                                    master.RedirectWithAlert("Pages/PerfilTalento.aspx", "Inicio de sesión exitoso. Redirigiendo...", MessageType.success);
+                                else if (Session["Rol"].ToString() == "2")
+                                    master.RedirectWithAlert("Pages/PerfilEmpresa.aspx", "Inicio de sesión exitoso. Redirigiendo...", MessageType.success);
+                                else
+                                    master.RedirectWithAlert("index.html", "Inicio de sesión exitoso. Redirigiendo...", MessageType.success);
                             }
                             else
                             {
