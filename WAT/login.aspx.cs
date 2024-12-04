@@ -10,24 +10,30 @@ using System.Web.UI.WebControls;
 using System.Data.SqlClient;
 using System.Security.Policy;
 using WAT.Recursos.utils;
+using static WAT.site;
+using System.Diagnostics.Metrics;
 
 namespace WAT
 {
-    public partial class login : System.Web.UI.Page
+    public partial class login : Page
     {
         private site master;
-        string connectionStringWat_db = System.Configuration.ConfigurationManager.ConnectionStrings["wat_db"].ConnectionString;
+        string connectionStringWat_db = ConfigurationManager.ConnectionStrings["wat_db"].ConnectionString;
 
         protected void Page_Load(object sender, EventArgs e)
         {
             master = (site)this.Master;
+            if (!IsPostBack)
+                hfFormState.Value = "login";
+            else
+                ScriptManager.RegisterStartupScript(this, this.GetType(), "SetFormState", $"toggleForms('{hfFormState.Value}');", true);
         }
 
         protected void btnLogin_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrWhiteSpace(txtLoginEmail.Text) || string.IsNullOrWhiteSpace(txtLoginPassword.Text))
             {
-                master?.ShowErrorMessage("Por favor, ingresa tu correo y contraseña.");
+                master.ShowSuccess("Por favor, ingresa tu correo y contraseña.");
                 return;
             }
 
@@ -37,29 +43,26 @@ namespace WAT
                 {
                     conn.Open();
                     string hashedPassword = PasswordHasher.HashPassword(txtLoginPassword.Text);
-
                     using (MySqlCommand cmd = new MySqlCommand("sp_AutenticarUsuario", conn))
                     {
                         cmd.CommandType = System.Data.CommandType.StoredProcedure;
+                        cmd.Parameters.AddWithValue("@p_rol_id", ddlRol.SelectedValue);
                         cmd.Parameters.AddWithValue("@p_email", txtLoginEmail.Text);
-                        cmd.Parameters.AddWithValue("@p_hashed_password", hashedPassword);
+                        cmd.Parameters.AddWithValue("@p_contrasena_hash", hashedPassword);
 
                         using (MySqlDataReader reader = cmd.ExecuteReader())
                         {
                             if (reader.Read() && !reader.IsDBNull(0))
                             {
-                                // Usuario autenticado
                                 Session["UsuarioID"] = reader["user_id"];
-                                Session["Nombre"] = reader["nombre"];
+                                Session["Nombre"] = reader["nombre_completo"];
                                 Session["Rol"] = reader["rol_id"];
 
-                                master?.ShowSuccessMessage("Inicio de sesión exitoso. Redirigiendo...");
-                                Response.Redirect("Perfil.aspx");
+                                master.RedirectWithAlert("Pages/Perfil.aspx", "Inicio de sesión exitoso. Redirigiendo...", MessageType.success);
                             }
                             else
                             {
-                                // Credenciales incorrectas
-                                master?.ShowErrorMessage("Correo o contraseña incorrectos.");
+                                master.ShowError("Correo o contraseña incorrectos.");
                             }
                         }
                     }
@@ -67,11 +70,11 @@ namespace WAT
             }
             catch (MySqlException ex)
             {
-                master?.ShowErrorMessage($"Error al conectar con la base de datos: {ex.Message}");
+                master.ShowError($"Error al conectar con la base de datos: {ex.Message}");
             }
             catch (Exception ex)
             {
-                master?.ShowErrorMessage($"Ocurrió un error inesperado: {ex.Message}");
+                master.ShowError($"Ocurrió un error inesperado: {ex.Message}");
             }
         }
 
@@ -86,25 +89,21 @@ namespace WAT
                 ddlRegisterRol.SelectedValue == "")
             {
 
-                master?.ShowErrorMessage("Por favor, completa todos los campos.");
+                master.ShowWarning("Por favor, completa todos los campos.");
                 return;
             }
 
             if (txtPassword.Text != txtConfirmPassword.Text)
             {
-                master?.ShowErrorMessage("Las contraseñas no coinciden.");
+                master.ShowWarning("Las contraseñas no coinciden.");
                 return;
             }
 
             try
             {
-                string connectionString = System.Configuration.ConfigurationManager.ConnectionStrings["MySqlConnection"].ConnectionString;
-
-                using (MySqlConnection conn = new MySqlConnection(connectionString))
+                using (MySqlConnection conn = new MySqlConnection(connectionStringWat_db))
                 {
                     conn.Open();
-
-                    // Generar el hash de la contraseña
                     string hashedPassword = PasswordHasher.HashPassword(txtPassword.Text);
 
                     using (MySqlCommand cmd = new MySqlCommand("sp_RegistrarUsuario", conn))
@@ -118,24 +117,25 @@ namespace WAT
                         cmd.Parameters.AddWithValue("@p_contrasena_hash", hashedPassword);
                         cmd.ExecuteNonQuery();
 
-                        master?.ShowSuccessMessage("¡Registro exitoso! Ahora puedes iniciar sesión.");
+                        master.ShowSuccess("¡Registro exitoso! Ahora puedes iniciar sesión.");
+                        ScriptManager.RegisterStartupScript(this, this.GetType(), "SetFormState", $"toggleForms('login');", true);
                     }
                 }
             }
             catch (MySqlException ex)
             {
-                if (ex.Number == 1062) // Código de error para duplicados en MySQL
+                if (ex.Number == 1062)
                 {
-                    master?.ShowErrorMessage($"El correo electrónico o número de identificación ya están registrados.");
+                    master.ShowError($"El correo electrónico o número de identificación ya están registrados.");
                 }
                 else
                 {
-                    master?.ShowErrorMessage($"Ocurrió un error al registrar el usuario. Por favor, inténtalo de nuevo.");
+                    master.ShowError($"Ocurrió un error al registrar el usuario. Por favor, inténtalo de nuevo.");
                 }
             }
             catch (Exception ex)
             {
-                master?.ShowErrorMessage($"Ocurrió un error inesperado: {ex.Message}");
+                master.ShowError($"Ocurrió un error inesperado: {ex.Message}");
             }
         }
     }

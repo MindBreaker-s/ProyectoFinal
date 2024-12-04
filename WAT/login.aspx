@@ -1,14 +1,40 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/site.Master" AutoEventWireup="true" CodeBehind="login.aspx.cs" Inherits="WAT.login" %>
 
-<asp:Content ID="Content1" ContentPlaceHolderID="Styles" runat="server">
+<asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="server">
     <link rel="stylesheet" href="/Recursos/css/login.css" type="text/css" />
     <style>
         .form-floating label {
             color: #333;
         }
     </style>
+
+    <script>
+        function toggleForms(target) {
+            const hfFormState = document.getElementById('<%= hfFormState.ClientID %>');
+            hfFormState.value = target;
+
+            const loginForm = document.getElementById('login-form');
+            const registerForm = document.getElementById('register-form');
+            const loginText = document.getElementById('login-text');
+            const registerText = document.getElementById('register-text');
+
+            if (target === 'register') {
+                loginForm.classList.remove('active');
+                loginText.classList.remove('active');
+                registerForm.classList.add('active');
+                registerText.classList.add('active');
+            } else {
+                registerForm.classList.remove('active');
+                registerText.classList.remove('active');
+                loginForm.classList.add('active');
+                loginText.classList.add('active');
+            }
+        }
+    </script>
 </asp:Content>
+
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
+    <asp:HiddenField runat="server" ID="hfFormState" Value="login" />
     <div class="container-half">
         <div class="section left-section">
             <div class="background">
@@ -20,19 +46,19 @@
                 <p><a class="toggle-link" href="Registro.aspx">¿Aún no tienes cuenta? Regístrate aquí</a></p>
                 <div class="form-floating">
                     <div class="form-floating mb-3">
-                        <asp:DropDownList ID="ddlRol" CssClass="form-select mb-3" runat="server" AppendDataBoundItems="true" required>
+                        <asp:DropDownList ID="ddlRol" CssClass="form-select mb-3" runat="server" AppendDataBoundItems="true">
                             <asp:ListItem Text="-- Selecciona --" Value="" Enabled="true" />
-                            <asp:ListItem Text="Talento" Value="talent" />
-                            <asp:ListItem Text="Empresa" Value="company" />
+                            <asp:ListItem Text="Talento" Value="1" />
+                            <asp:ListItem Text="Empresa" Value="2" />
                         </asp:DropDownList>
                         <label for="ddlRol" class="form-label">Que Eres?</label>
                     </div>
                     <div class="form-floating mb-3">
-                        <asp:TextBox ID="txtLoginEmail" CssClass="form-control mb-3" runat="server" placeholder="Correo Electrónico" TextMode="Email" required></asp:TextBox>
+                        <asp:TextBox ID="txtLoginEmail" CssClass="form-control mb-3" runat="server" placeholder="Correo Electrónico" TextMode="Email"></asp:TextBox>
                         <label for="txtLoginEmail" class="form-label">Correo Electrónico</label>
                     </div>
                     <div class="form-floating mb-3">
-                        <asp:TextBox ID="txtLoginPassword" CssClass="form-control mb-3" runat="server" placeholder="Contraseña" TextMode="Password" required></asp:TextBox>
+                        <asp:TextBox ID="txtLoginPassword" CssClass="form-control mb-3" runat="server" placeholder="Contraseña" TextMode="Password"></asp:TextBox>
                         <label for="txtLoginPassword" class="form-label">Contraseña</label>
                     </div>
                     <asp:Button ID="btnLogin" CssClass="btn btn-primary w-100" runat="server" Text="Iniciar Sesión" OnClick="btnLogin_Click" />
@@ -72,8 +98,8 @@
                     <div class="form-floating mb-3">
                         <asp:DropDownList ID="ddlRegisterRol" CssClass="form-select" runat="server">
                             <asp:ListItem Text="-- Selecciona --" Value="" Enabled="true" />
-                            <asp:ListItem Text="Talento" Value="talent" />
-                            <asp:ListItem Text="Empresa" Value="company" />
+                            <asp:ListItem Text="Talento" Value="1" />
+                            <asp:ListItem Text="Empresa" Value="2" />
                         </asp:DropDownList>
                         <label for="ddlRegisterRol" class="form-label">Que Eres?</label>
                     </div>
@@ -94,26 +120,5 @@
             </div>
         </div>
     </div>
-
-
-    <script>
-        function toggleForms(target) {
-            const loginForm = document.getElementById('login-form');
-            const registerForm = document.getElementById('register-form');
-            const loginText = document.getElementById('login-text');
-            const registerText = document.getElementById('register-text');
-
-            if (target === 'register') {
-                loginForm.classList.remove('active');
-                loginText.classList.remove('active');
-                registerForm.classList.add('active');
-                registerText.classList.add('active');
-            } else {
-                registerForm.classList.remove('active');
-                registerText.classList.remove('active');
-                loginForm.classList.add('active');
-                loginText.classList.add('active');
-            }
-        }
-    </script>
 </asp:Content>
+

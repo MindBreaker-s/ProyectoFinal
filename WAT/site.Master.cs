@@ -13,9 +13,12 @@ namespace WAT
         string connectionStringWat_db = System.Configuration.ConfigurationManager.ConnectionStrings["wat_db"].ConnectionString;
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (Session["Usuario"] != null)
+            if (!IsPostBack)
             {
-                Response.Redirect("Perfil.aspx");
+                if (Session["Usuario"] == null && !Request.Url.ToString().Contains("login.aspx"))
+                {
+                    Response.Redirect("login.aspx");
+                }
             }
 
             //if (Session["Rol"].ToString() == "1")
@@ -29,35 +32,53 @@ namespace WAT
             }
         }
 
-        /// <summary>
-        /// Muestra un mensaje de confirmación o éxito.
-        /// </summary>
-        /// <param name="message">El mensaje a mostrar.</param>
-        public void ShowSuccessMessage(string message)
+        public void RedirectWithAlert(string url, string message, MessageType type, int delayMilliseconds = 5000)
         {
-            MessagePanel.CssClass = "alert alert-success"; // Clase CSS para mensajes de éxito
-            MessageText.Text = message;
-            MessagePanel.Visible = true;
+            string alertType = type.ToString().ToLower();
+
+            string script = $@"
+                showAlert('{message}', '{alertType}');
+                setTimeout(function() {{
+                    window.location.href = '{url}';
+                }}, {delayMilliseconds});
+            ";
+
+            ScriptManager.RegisterStartupScript(this, GetType(), "redirectWithAlert", script, true);
         }
 
-        /// <summary>
-        /// Muestra un mensaje de error.
-        /// </summary>
-        /// <param name="message">El mensaje a mostrar.</param>
-        public void ShowErrorMessage(string message)
+        public void ShowError(string message)
         {
-            MessagePanel.CssClass = "alert alert-danger"; // Clase CSS para mensajes de error
-            MessageText.Text = message;
-            MessagePanel.Visible = true;
+            Show(MessageType.danger, message);
         }
 
-        /// <summary>
-        /// Oculta cualquier mensaje actualmente visible.
-        /// </summary>
-        public void HideMessage()
+        public void ShowInfo(string message)
         {
-            MessagePanel.Visible = false;
-            MessageText.Text = string.Empty;
+            Show(MessageType.info, message);
         }
+
+        public void ShowSuccess(string message)
+        {
+            Show(MessageType.success, message);
+        }
+
+        public void ShowWarning(string message)
+        {
+            Show(MessageType.warning, message);
+        }
+
+        private void Show(MessageType messageType, string message)
+        {
+            string script = $"showAlert('{message}', '{messageType}');";
+            ScriptManager.RegisterStartupScript(this, this.GetType(), "ShowAlert", script, true);
+        }
+
+        public enum MessageType
+        {
+            danger = 1,
+            info = 2,
+            success = 3,
+            warning = 4
+        }
+
     }
 }

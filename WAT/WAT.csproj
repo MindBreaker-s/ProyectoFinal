@@ -124,6 +124,7 @@
     <Content Include="login.aspx" />
     <Content Include="Pages\Perfil.aspx" />
     <Content Include="Recursos\css\login.css" />
+    <Content Include="Recursos\css\MessageBox.css" />
     <Content Include="Recursos\css\styles.css" />
     <Content Include="Web.config" />
   </ItemGroup>

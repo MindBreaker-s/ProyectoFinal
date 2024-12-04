@@ -2,17 +2,48 @@
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head runat="server">
     <title></title>
-    <link
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-        rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-        crossorigin="anonymous" />
-    <asp:ContentPlaceHolder ID="Styles" runat="server">
-        <link rel="stylesheet" href="/Recursos/css/styles.css" type="text/css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/jscript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <link href="/Recursos/css/styles.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+        .message {
+            width: 100%;
+            position: fixed;
+            top: 50px;
+            z-index: 100000;
+            padding: 0;
+            font-size: 15px;
+        }
+    </style>
+    <script type="text/javascript">
+        function showAlert(message, type = "success") {
+            const alertContainer = document.getElementById("alert-container");
+
+            // Crear el elemento de la alerta
+            const alert = document.createElement("div");
+            alert.className = `alert alert-${type} alert-dismissible fade show`;
+            alert.role = "alert";
+            alert.innerHTML = `
+            ${message}
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        `;
+
+            // Añadir la alerta al contenedor
+            alertContainer.appendChild(alert);
+
+            // Opcional: Remover la alerta automáticamente después de 5 segundos
+            setTimeout(() => {
+                alert.classList.remove("show");
+                alert.addEventListener("transitionend", () => alert.remove());
+            }, 5000);
+        }
+    </script>
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
     </asp:ContentPlaceHolder>
 </head>
 <body>
@@ -23,6 +54,7 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item"><a class="nav-link" href="Login.aspx">Inicio Sesión</a></li>
@@ -33,30 +65,12 @@
     </div>
 
     <form id="form1" runat="server">
-        <asp:ContentPlaceHolder ID="MainContent" runat="server">
-        </asp:ContentPlaceHolder>
-
-
-        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-            <asp:Panel ID="MessagePanel" runat="server" Visible="false" CssClass="alert" Style="margin: 10px 0;">
-                <asp:Literal ID="MessageText" runat="server"></asp:Literal>
-            </asp:Panel>
-        </asp:ContentPlaceHolder>
+        <div>
+            <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+        </div>
+        <div id="alert-container" class="fixed-bottom m-3" style="z-index: 1050;"></div>
     </form>
-
-    <script>
-      <%--  setTimeout(function () {
-            var messagePanel = document.getElementById('<%= MessagePanel.ClientID %>');
-            if (messagePanel) {
-                messagePanel.style.display = 'none';
-            }
-        }, 5000); // Ocultar después de 5 segundos--%>
-    </script>
-
-    <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
 
