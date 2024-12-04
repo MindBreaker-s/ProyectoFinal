@@ -15,21 +15,21 @@ namespace WAT
         {
             if (!IsPostBack)
             {
-                if (Session["Usuario"] == null && !Request.Url.ToString().Contains("login.aspx"))
+                btnCerrarSesion.Visible = Session["UsuarioID"] != null; // Mostrar el botón si la sesión está activa
+                if (Session["UsuarioID"] == null && !Request.Url.ToString().Contains("login.aspx"))
                 {
-                    Response.Redirect("login.aspx");
+                    Response.Redirect("~/login.aspx", true);
                 }
             }
+        }
 
-            //if (Session["Rol"].ToString() == "1")
-            //{
+        protected void btnCerrarSesion_Click(object sender, EventArgs e)
+        {
 
-            //}
+            Session.Clear();
+            Session.Abandon();
 
-            using (MySqlConnection conexion = new MySqlConnection(connectionStringWat_db))            
-            { 
-            
-            }
+            Response.Redirect("~/login.aspx");
         }
 
         public void RedirectWithAlert(string url, string message, MessageType type, int delayMilliseconds = 5000)
@@ -79,6 +79,5 @@ namespace WAT
             success = 3,
             warning = 4
         }
-
     }
 }

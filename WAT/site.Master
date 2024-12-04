@@ -47,25 +47,30 @@
     </asp:ContentPlaceHolder>
 </head>
 <body>
-    <div id="navbar">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">WAT</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
 
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item"><a class="nav-link" href="Login.aspx">Inicio Sesión</a></li>
-                    </ul>
+    <form id="form1" runat="server">        
+        <div id="navbar">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <asp:Image runat="server" ImageUrl="~/Recursos/images/logo.png" Width="50px"/>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <asp:Button ID="btnCerrarSesion" runat="server" Text="Cerrar Sesión"
+                                    CssClass="btn btn-outline-success" OnClick="btnCerrarSesion_Click" Visible="false" />
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        </nav>
-    </div>
+            </nav>
+        </div>
 
-    <form id="form1" runat="server">
-        <div>
+        <div id="content">
             <asp:ContentPlaceHolder ID="MainContent" runat="server" />
         </div>
         <div id="alert-container" class="fixed-bottom m-3" style="z-index: 1050;"></div>

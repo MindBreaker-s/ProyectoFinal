@@ -3,7 +3,35 @@
   "WorkspaceRootPath": "C:\\Users\\nasae\\source\\repos\\ProyectoFinal\\WAT\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4C0867B1-2E79-4DBD-8A5F-FA0BB66A3957}|WAT.csproj|c:\\users\\nasae\\source\\repos\\proyectofinal\\wat\\login.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4C0867B1-2E79-4DBD-8A5F-FA0BB66A3957}|WAT.csproj|c:\\users\\nasae\\source\\repos\\proyectofinal\\wat\\recursos\\css\\perfiltalento.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{4C0867B1-2E79-4DBD-8A5F-FA0BB66A3957}|WAT.csproj|solutionrelative:recursos\\css\\perfiltalento.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C0867B1-2E79-4DBD-8A5F-FA0BB66A3957}|WAT.csproj|c:\\users\\nasae\\source\\repos\\proyectofinal\\wat\\pages\\perfil\\perfilempresa.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4C0867B1-2E79-4DBD-8A5F-FA0BB66A3957}|WAT.csproj|solutionrelative:pages\\perfil\\perfilempresa.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C0867B1-2E79-4DBD-8A5F-FA0BB66A3957}|WAT.csproj|c:\\users\\nasae\\source\\repos\\proyectofinal\\wat\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4C0867B1-2E79-4DBD-8A5F-FA0BB66A3957}|WAT.csproj|solutionrelative:index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C0867B1-2E79-4DBD-8A5F-FA0BB66A3957}|WAT.csproj|C:\\Users\\nasae\\source\\repos\\ProyectoFinal\\WAT\\site.Master.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4C0867B1-2E79-4DBD-8A5F-FA0BB66A3957}|WAT.csproj|solutionrelative:site.Master.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C0867B1-2E79-4DBD-8A5F-FA0BB66A3957}|WAT.csproj|c:\\users\\nasae\\source\\repos\\proyectofinal\\wat\\pages\\perfil\\perfiltalento.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4C0867B1-2E79-4DBD-8A5F-FA0BB66A3957}|WAT.csproj|solutionrelative:pages\\perfil\\perfiltalento.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C0867B1-2E79-4DBD-8A5F-FA0BB66A3957}|WAT.csproj|c:\\users\\nasae\\source\\repos\\proyectofinal\\wat\\pages\\perfil\\perfilempresa.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{4C0867B1-2E79-4DBD-8A5F-FA0BB66A3957}|WAT.csproj|solutionrelative:pages\\perfil\\perfilempresa.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C0867B1-2E79-4DBD-8A5F-FA0BB66A3957}|WAT.csproj|c:\\users\\nasae\\source\\repos\\proyectofinal\\wat\\pages\\perfil\\perfiltalento.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{4C0867B1-2E79-4DBD-8A5F-FA0BB66A3957}|WAT.csproj|solutionrelative:pages\\perfil\\perfiltalento.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C0867B1-2E79-4DBD-8A5F-FA0BB66A3957}|WAT.csproj|C:\\Users\\nasae\\source\\repos\\ProyectoFinal\\WAT\\login.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4C0867B1-2E79-4DBD-8A5F-FA0BB66A3957}|WAT.csproj|solutionrelative:login.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -11,8 +39,8 @@
       "RelativeMoniker": "D:0:0:{4C0867B1-2E79-4DBD-8A5F-FA0BB66A3957}|WAT.csproj|solutionrelative:login.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4C0867B1-2E79-4DBD-8A5F-FA0BB66A3957}|WAT.csproj|C:\\Users\\nasae\\source\\repos\\ProyectoFinal\\WAT\\recursos\\utils\\passwordhasher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4C0867B1-2E79-4DBD-8A5F-FA0BB66A3957}|WAT.csproj|solutionrelative:recursos\\utils\\passwordhasher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4C0867B1-2E79-4DBD-8A5F-FA0BB66A3957}|WAT.csproj|C:\\Users\\nasae\\source\\repos\\ProyectoFinal\\WAT\\site.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
+      "RelativeMoniker": "D:0:0:{4C0867B1-2E79-4DBD-8A5F-FA0BB66A3957}|WAT.csproj|solutionrelative:site.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,27 +50,144 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:133:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "PasswordHasher.cs",
-              "DocumentMoniker": "C:\\Users\\nasae\\source\\repos\\ProyectoFinal\\WAT\\Recursos\\utils\\PasswordHasher.cs",
-              "RelativeDocumentMoniker": "Recursos\\utils\\PasswordHasher.cs",
-              "ToolTip": "C:\\Users\\nasae\\source\\repos\\ProyectoFinal\\WAT\\Recursos\\utils\\PasswordHasher.cs",
-              "RelativeToolTip": "Recursos\\utils\\PasswordHasher.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-04T07:19:58.363Z"
+              "Title": "index.html",
+              "DocumentMoniker": "C:\\Users\\nasae\\source\\repos\\ProyectoFinal\\WAT\\index.html",
+              "RelativeDocumentMoniker": "index.html",
+              "ToolTip": "C:\\Users\\nasae\\source\\repos\\ProyectoFinal\\WAT\\index.html",
+              "RelativeToolTip": "index.html",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAABsAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-12-04T22:06:41.523Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PerfilTalento.css",
+              "DocumentMoniker": "C:\\Users\\nasae\\source\\repos\\ProyectoFinal\\WAT\\Recursos\\css\\PerfilTalento.css",
+              "RelativeDocumentMoniker": "Recursos\\css\\PerfilTalento.css",
+              "ToolTip": "C:\\Users\\nasae\\source\\repos\\ProyectoFinal\\WAT\\Recursos\\css\\PerfilTalento.css",
+              "RelativeToolTip": "Recursos\\css\\PerfilTalento.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-12-04T22:04:05.196Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "PerfilEmpresa.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\nasae\\Source\\Repos\\ProyectoFinal\\WAT\\Pages\\Perfil\\PerfilEmpresa.aspx.cs",
+              "RelativeDocumentMoniker": "Pages\\Perfil\\PerfilEmpresa.aspx.cs",
+              "ToolTip": "C:\\Users\\nasae\\Source\\Repos\\ProyectoFinal\\WAT\\Pages\\Perfil\\PerfilEmpresa.aspx.cs",
+              "RelativeToolTip": "Pages\\Perfil\\PerfilEmpresa.aspx.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T21:59:40.481Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PerfilEmpresa.aspx",
+              "DocumentMoniker": "C:\\Users\\nasae\\source\\repos\\ProyectoFinal\\WAT\\Pages\\Perfil\\PerfilEmpresa.aspx",
+              "RelativeDocumentMoniker": "Pages\\Perfil\\PerfilEmpresa.aspx",
+              "ToolTip": "C:\\Users\\nasae\\source\\repos\\ProyectoFinal\\WAT\\Pages\\Perfil\\PerfilEmpresa.aspx",
+              "RelativeToolTip": "Pages\\Perfil\\PerfilEmpresa.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-12-04T21:57:40.969Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PerfilTalento.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\nasae\\source\\repos\\ProyectoFinal\\WAT\\Pages\\Perfil\\PerfilTalento.aspx.cs",
+              "RelativeDocumentMoniker": "Pages\\Perfil\\PerfilTalento.aspx.cs",
+              "ToolTip": "C:\\Users\\nasae\\source\\repos\\ProyectoFinal\\WAT\\Pages\\Perfil\\PerfilTalento.aspx.cs",
+              "RelativeToolTip": "Pages\\Perfil\\PerfilTalento.aspx.cs",
+              "ViewState": "AgIAAHgAAAAAAAAAAAAewJ0AAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T19:25:48.969Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PerfilTalento.aspx",
+              "DocumentMoniker": "C:\\Users\\nasae\\source\\repos\\ProyectoFinal\\WAT\\Pages\\Perfil\\PerfilTalento.aspx",
+              "RelativeDocumentMoniker": "Pages\\Perfil\\PerfilTalento.aspx",
+              "ToolTip": "C:\\Users\\nasae\\source\\repos\\ProyectoFinal\\WAT\\Pages\\Perfil\\PerfilTalento.aspx",
+              "RelativeToolTip": "Pages\\Perfil\\PerfilTalento.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-12-04T19:26:21.906Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "site.Master",
+              "DocumentMoniker": "C:\\Users\\nasae\\source\\repos\\ProyectoFinal\\WAT\\site.Master",
+              "RelativeDocumentMoniker": "site.Master",
+              "ToolTip": "C:\\Users\\nasae\\source\\repos\\ProyectoFinal\\WAT\\site.Master",
+              "RelativeToolTip": "site.Master",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-12-04T18:54:26.058Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "site.Master.cs",
+              "DocumentMoniker": "C:\\Users\\nasae\\source\\repos\\ProyectoFinal\\WAT\\site.Master.cs",
+              "RelativeDocumentMoniker": "site.Master.cs",
+              "ToolTip": "C:\\Users\\nasae\\source\\repos\\ProyectoFinal\\WAT\\site.Master.cs",
+              "RelativeToolTip": "site.Master.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABMAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T18:50:40.973Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "login.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\nasae\\source\\repos\\ProyectoFinal\\WAT\\login.aspx.cs",
+              "RelativeDocumentMoniker": "login.aspx.cs",
+              "ToolTip": "C:\\Users\\nasae\\source\\repos\\ProyectoFinal\\WAT\\login.aspx.cs",
+              "RelativeToolTip": "login.aspx.cs",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAMwFYAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-29T06:00:56.384Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "login.aspx",
               "DocumentMoniker": "C:\\Users\\nasae\\source\\repos\\ProyectoFinal\\WAT\\login.aspx",
               "RelativeDocumentMoniker": "login.aspx",
@@ -50,19 +195,7 @@
               "RelativeToolTip": "login.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-11-29T05:59:47.264Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "login.aspx.cs",
-              "DocumentMoniker": "C:\\Users\\nasae\\source\\repos\\ProyectoFinal\\WAT\\login.aspx.cs",
-              "RelativeDocumentMoniker": "login.aspx.cs",
-              "ToolTip": "C:\\Users\\nasae\\source\\repos\\ProyectoFinal\\WAT\\login.aspx.cs",
-              "RelativeToolTip": "login.aspx.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-29T06:00:56.384Z",
+              "WhenOpened": "2024-11-29T05:59:47.264Z",
               "EditorCaption": ""
             }
           ]

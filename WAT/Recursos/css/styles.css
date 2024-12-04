@@ -56,6 +56,151 @@
     width: 50%;
     background-color: #F18FF2;
 }
+/* Estilo para el Footer */
+footer#contacto {
+    background-color: #555; /* Azul claro */
+    color: #FFFFFF; /* Texto blanco */
+    padding: 30px 20px; /* Espaciado interior */
+    text-align: center; /* Centrar el texto */
+    margin-top: 50px; /* Separación del contenido superior */
+}
+
+    footer#contacto h3 {
+        font-size: 24px; /* Tamaño de fuente para el título */
+        margin-bottom: 15px; /* Espacio debajo del título */
+    }
+
+    footer#contacto p {
+        font-size: 16px; /* Tamaño de fuente para los párrafos */
+        margin: 5px 0; /* Espaciado entre párrafos */
+    }
+
+    footer#contacto a {
+        color: #FFFFFF; /* Color blanco para los enlaces */
+        text-decoration: none; /* Eliminar subrayado de los enlaces */
+    }
+
+        footer#contacto a:hover {
+            text-decoration: underline; /* Subrayar los enlaces al pasar el cursor */
+        }
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+.carousel-item img {
+    height: 400px; /* Ajusta esta altura según tus necesidades */
+    object-fit: cover; /* Asegura que las imágenes se adapten al espacio */
+    width: auto; /* Mantiene las proporciones */
+    margin: 0 auto; /* Centra la imagen si la anchura no ocupa todo el espacio */
+}
+
+.features-section {
+    background-color: #f8f9fa; /* Fondo claro */
+}
+
+.feature-box {
+    border: 1px solid #ddd; /* Borde ligero */
+    border-radius: 8px; /* Bordes redondeados */
+    background-color: #ffffff; /* Fondo blanco */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+    .feature-box:hover {
+        transform: translateY(-10px); /* Efecto de elevación */
+        box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    }
+
+.feature-title {
+    color: #0073b1; /* Azul (similar al de LinkedIn) */
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.feature-box p {
+    font-size: 1rem;
+    color: #555; /* Gris oscuro */
+}
+
+.feature-box .btn {
+    background-color: #0073b1;
+    color: #fff;
+    border: none;
+}
+
+    .feature-box .btn:hover {
+        background-color: #005580;
+    }
+
+
+
+/* Contenedor de la imagen */
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; /* Esconde lo que sobresale de la imagen */
+}
+
+/* Estilo base de la imagen */
+.talento-image, .empresa-image {
+    width: 100%; /* Asegura que la imagen ocupe todo el espacio disponible */
+    height: auto; /* Mantiene la relación de aspecto */
+    transition: opacity 0.3s ease; /* Transición suave para el cambio de opacidad */
+}
+
+/* Efecto hover: imagen más opaca */
+.image-container:hover .talento-image,
+.image-container:hover .empresa-image {
+    opacity: 0.5; /* Cambia la opacidad a 0.5 cuando se pasa el mouse */
+}
+
+/* Estilo adicional de texto para asegurar que sea legible sobre la imagen */
+.talento-section h1, .empresa-section h1 {
+    color: #fff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra para mejorar la legibilidad */
+}
+
+.talento-section p, .empresa-section p {
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+
+/* Eliminar margen superior del footer */
+footer#contacto {
+    margin-top: 0; /* Eliminar el margen superior */
+    padding-top: 0; /* Si hay relleno extra, elimínalo también */
+}
+
+/* Asegurar que la sección anterior al footer no tenga margen inferior */
+.principal-functions {
+    margin-bottom: 0; /* Eliminar margen inferior */
+    padding-bottom: 0; /* Eliminar relleno inferior */
+}
+
+
+
+/* Eliminar borde entre las secciones */
+.main, .principal-functions {
+    border: none; /* Eliminar el borde de las secciones */
+}
+
+/* Eliminar el margen entre las secciones */
+.talento-section, .empresa-section {
+    margin: 0;
+    padding: 0; /* Asegura que no haya márgenes ni relleno innecesarios */
+}
+
+/* Para las secciones de funciones */
+.talento-section-functions, .empresa-section-functions {
+    margin: 0;
+    padding: 0;
+    border: none; /* Evitar bordes en estas secciones */
+}
 
 .alert {
     padding: 15px;
